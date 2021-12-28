@@ -1,0 +1,11 @@
+<aside class="bg-secondary p-3" id="sidebar">
+  <h1>Gifts App</h1>
+  <hr class="text-primary">
+  <div class="list-group list-reset">
+    <button
+      *ngFor="let item of historial"
+      (click)="buscar( item )"
+      class="list-group-item list-group-item-action"
+    >{{ item | titlecase }}</button>
+  </div>
+</aside>
